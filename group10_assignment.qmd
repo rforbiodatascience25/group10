@@ -1,6 +1,9 @@
 ---
-title: "group10_assignment"
-format: html
+title: "Lab 7 Assignment: Group 10"
+author: "Pablo Fernandez (s243357), Edene Levine (s240875), Molly Hong-Minh (s242955), Vinit Vasa (s242582)"
+format:
+  html:
+    embed-resources: true
 editor: visual
 ---
 
@@ -24,11 +27,6 @@ library(cowplot)
 #| message: false
 
 biopsy <- read_csv("https://wilkelab.org/classes/SDS348/data_sets/biopsy.csv")
-
-```
-
-```{r}
-biopsy
 ```
 
 **Note:**
@@ -43,10 +41,6 @@ pca_fit <- biopsy %>%
   prcomp(scale = TRUE) # do PCA on scaled data
 ```
 
-```{r}
-pca_fit 
-```
-
 Alternative to `scale = TRUE`, we could also have scaled the data by explicitly invoking the `scale()` function.
 
 ```{r}
@@ -58,9 +52,9 @@ pca_fit <- biopsy %>%
 
 ## 3. Plot the data in PC coordinates
 
-combining the PC coordinates with the original dataset
+Combining the PC coordinates with the original dataset
 
-color points by categorical variables present in the original data but removed for the PCA by `augment()` function from broom, takes as arguments the fitted model and the original data.
+Color points by categorical variables present in the original data but removed for the PCA by `augment()` function from broom, takes as arguments the fitted model and the original data.
 
 The columns containing the fitted coordinates are called `.fittedPC1`, `.fittedPC2`, etc.
 
@@ -79,7 +73,7 @@ pca_fit %>%
 
 The rotation matrix is stored as `pca_fit$rotation`
 
-we’ll extract it using the `tidy()` function from broom. When applied to `prcomp` objects, the `tidy()` function takes an additional argument `matrix`, which we set to `matrix = "rotation"` to extract the rotation matrix.
+We’ll extract it using the `tidy()` function from broom. When applied to `prcomp` objects, the `tidy()` function takes an additional argument `matrix`, which we set to `matrix = "rotation"` to extract the rotation matrix.
 
 ```{r}
 # extract rotation matrix
@@ -122,11 +116,11 @@ pca_fit %>%
 
 ```
 
-we can see the Mitoses is not really related to the others.
+We can see the Mitoses is not really related to the others.
 
 ## 5. Plot the variance explained by each PC
 
-extract this information using the `tidy()` function from broom, now by setting the `matrix` argument to `matrix = "eigenvalues"`.
+Extract this information using the `tidy()` function from broom, now by setting the `matrix` argument to `matrix = "eigenvalues"`.
 
 ```{r}
 pca_fit %>%
