@@ -42,7 +42,25 @@ a
 
 ## Pablo
 
+Pablo's code
+
 ```{r}
 c <- 60 / 3
 c
+```
+
+#### New analysis
+
+More code from Pablo
+
+```{r}
+library("tidyverse")
+
+data <- data.frame(
+  x = c(1, 2, 3, 4, 5, 6),
+  y = c(2, 3, 5, 4, 6, 7)
+)
+
+ggplot(data, aes(x = x, y = y)) +
+  geom_point()
 ```
