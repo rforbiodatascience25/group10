@@ -6,12 +6,19 @@ editor: visual
 
 ## Edene
 
-## Molly
+## Molly 
 
 ## Vinit
 
 ```{r}
 sum = 6 + 7
+```
+
+Testing
+
+```{r}
+a <- 2 + 2
+a
 ```
 
 ## Pablo
