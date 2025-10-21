@@ -81,6 +81,16 @@ pca_fit %>%
   tidy(matrix = "rotation")
 ```
 
+##### here we can see the cells we have and the dataframe we have
+
+```{r}
+pca_fit %>%
+  tidy(matrix = "rotation") %>%
+  filter(PC == 1:2) %>%
+  pivot_wider(names_from = "PC", names_prefix = "PC", values_from = "value")
+
+```
+
 #### Now in the context of a plot:
 
 ```{r}
