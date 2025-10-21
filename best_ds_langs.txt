@@ -15,5 +15,9 @@ Top 10 Bio Data Science Languages of ALL Time:
 4. has
 3. different
 2. tastes
+<<<<<<< HEAD
 1. python
+=======
+1. C +
+>>>>>>> ceef3712fb8559a598f1bca910223c6832898ce6
 ```
