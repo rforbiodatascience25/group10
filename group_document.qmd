@@ -4,9 +4,22 @@ format: html
 editor: visual
 ---
 
+### loading libraries
+
+```{r}
+
+```
+
 ## Edene
 
-## Molly 
+things to run
+
+```{r}
+x <- 1+1
+x
+```
+
+## Molly
 
 Testing
 
