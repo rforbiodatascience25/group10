@@ -19,6 +19,14 @@ x <- 1+1
 x
 ```
 
+#### New feature
+
+new code
+
+```{r}
+sum = 1+2+3
+```
+
 ## Molly
 
 Testing
