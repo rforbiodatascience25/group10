@@ -35,6 +35,12 @@ Testing
 a <- 2 + 2
 ```
 
+### New Feature
+
+```{r}
+b <- 3 + 3
+```
+
 ## Vinit
 
 ```{r}
