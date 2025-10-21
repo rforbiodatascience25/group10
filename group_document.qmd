@@ -47,6 +47,12 @@ b <- 3 + 3
 sum = 6 + 7
 ```
 
+### New feature
+
+```{r}
+sum = sum - 1
+```
+
 Testing
 
 ```{r}
