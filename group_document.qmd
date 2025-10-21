@@ -8,6 +8,10 @@ editor: visual
 
 ## Molly
 
-## Vinit 
+## Vinit
+
+```{r}
+sum = 6 + 7
+```
 
 ## Pablo
