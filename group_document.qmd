@@ -6,8 +6,15 @@ editor: visual
 
 ## Edene
 
-## Molly
+## Molly 
 
-## Vinit 
+Testing
+
+```{r}
+a <- 2 + 2
+a
+```
+
+## Vinit
 
 ## Pablo
