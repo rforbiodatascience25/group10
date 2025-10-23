@@ -143,6 +143,4 @@ pca_fit %>%
 
 ```
 
-The first component captures 65% of the variation in the data and, as we can see from the first plot in this post, nicely separates the benign samples from the malignant samples.
-
-So we can see that PC1 is the most important and has the highest %.
+> The plot clearly shows that the first principal component (PC1) accounts for the largest proportion of the total variance (≈65%), while the remaining components contribute much less. This indicates that most of the structure and separation between sample groups can be captured by PC1 alone, allowing for effective dimensionality reduction without significant loss of information.
